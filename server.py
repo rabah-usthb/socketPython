@@ -1,9 +1,8 @@
 import socket 
-import os
 
 host = '0.0.0.0'         #default host 
 data = ""
-port = int(os.environ.get('PORT', 12800))                                               #using free port 5000
+port = 12800                                              #using free port 5000
 server_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)           #setup TCP socket 
 server_socket.bind((host,port))                            #Bind the socket to the host and port
 server_socket.listen()  # The server starts listening for client connections
