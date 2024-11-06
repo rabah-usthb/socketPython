@@ -1,6 +1,6 @@
 import socket
 
-host = 'socketpython.onrender.com'    # host of server socket
+host = '192.168.1.70'    # host of server socket
 port = 12800  # port of server socket
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #create TCP client socket
 data = ""
